@@ -66,7 +66,7 @@ const Sidebar = () => {
                 </div>
                 <div className="side-link">
                     <img src={cameron} alt="" />
-                    <p>Nas Daily</p>
+                    <p>NAS Daily</p>
                 </div>
             </div>
         </div>
@@ -75,3 +75,7 @@ const Sidebar = () => {
 }
 
 export default Sidebar
+
+
+
+
