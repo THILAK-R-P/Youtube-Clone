@@ -15,7 +15,7 @@ import { useState } from 'react';
 const Feed = ({category}) => {
   const [data,setData] = useState([]);
   const fetchData = async()=>{
-    const videoList_url = `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics&chart=mostPopular&regionCode=US&videoCategoryId=${category}&maxResults=50&key=${API_KEY}`
+    const videoList_url = `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics&chart=mostPopular&regionCode=IN&videoCategoryId=${category}&maxResults=50&key=${API_KEY}`
     await fetch(videoList_url).then(response=>response.json()).then(data=>setData(data.items));
   }
   useEffect(()=>{
